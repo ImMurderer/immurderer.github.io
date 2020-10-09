@@ -18,7 +18,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     fetch(
-      'https://api.github.com/users/ImMurderer/repos?type=owner&sort=updated&order=desc'
+      'https://api.github.com/users/jppradoleal/repos?type=owner&sort=updated&order=desc'
     )
       .then((response) => response.json())
       .then((repositories) => {
