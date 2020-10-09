@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from './Components/Navbar';
-import Home from './Components/Home';
+import Navbar from './Components/Navbar/index';
+import Home from './Components/Home/';
 import Portfolio from './Components/Portfolio';
 import GlobalStyle from './styles/global';
-import Contact from './Components/Contact';
+import Contact from './Components/Contact/';
 
 const App = () => (
   <div>
