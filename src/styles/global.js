@@ -33,7 +33,6 @@ const GlobalStyle = createGlobalStyle`
     }
     body {
         background-color: var(--background-color);
-        overflow-x: hidden;
     }
     footer {
         background-color: var(--highlight-color);

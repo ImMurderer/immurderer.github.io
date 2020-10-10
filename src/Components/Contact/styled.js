@@ -6,6 +6,7 @@ const StyledContact = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: ${({ width }) => (width < 1050 ? 'column' : 'row')};
+    overflow: hidden;
     h3 {
         color: white;
         font-weight: 300;
@@ -18,7 +19,7 @@ const StyledContact = styled.div`
         margin-left: 15px;
     }
     form {
-        margin-left: 50px;
+        margin-left: ${({ width }) => (width < 1050 ? '0' : '50px')};;
         textarea {
             display: block;
             width: 350px;
@@ -76,7 +77,7 @@ const StyledContact = styled.div`
             content: '';
             position: absolute;
             top: -120px;
-            right: -5px;
+            right: ${({ width }) => (width < 1050 ? '-25px' : '-15px')};
             background-image: url('/img/Vector-2.svg');
             background-size: cover;
             width: 123%;
@@ -91,7 +92,7 @@ const StyledContact = styled.div`
             content: '';
             position: absolute;
             top: -100px;
-            right: -80px;
+            right: ${({ width }) => (width < 1050 ? '0px' : '-80px')};
             background-image: url('/img/Vector-1.svg');
             background-size: cover;
             width: 123%;
