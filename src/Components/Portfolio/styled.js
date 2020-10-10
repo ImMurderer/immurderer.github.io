@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 const StyledPortfolio = styled.div`
-  height: 100vh;
+  height: ${({ width }) => (width < 1050 ? '50vh' : '100vh')};;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: ${({ width }) => (width < 1050 ? '50px' : '0')};
+  overflow-x: hidden;
   .description {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 5px 15px;
@@ -59,6 +60,18 @@ const StyledPortfolio = styled.div`
         .languages {
           font-size: 14px;
           margin-top: 5px;
+          display: flex;
+          flex-direction: row;
+          * {
+            padding: 2px 4px;
+            border-radius: 5px;
+            background-color: var(--highlight-color);
+            color: white;
+            font-size: 12px;
+            &:nth-child(1n+2) {
+            margin-left: 5px;
+          }
+          }
         }
       }
     }
