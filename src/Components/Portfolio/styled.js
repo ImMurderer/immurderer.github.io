@@ -50,6 +50,7 @@ const StyledPortfolio = styled.div`
         position: absolute;
         bottom: 16px;
         left: 16px;
+        max-width: 70%;
         h2 {
           text-transform: capitalize;
           a {
@@ -62,15 +63,15 @@ const StyledPortfolio = styled.div`
           margin-top: 5px;
           display: flex;
           flex-direction: row;
+          flex-wrap: wrap;
+          width: 75%;
+          gap: 5px;
           * {
             padding: 2px 4px;
             border-radius: 5px;
             background-color: var(--highlight-color);
             color: white;
             font-size: 12px;
-            &:nth-child(1n+2) {
-            margin-left: 5px;
-          }
           }
         }
       }
